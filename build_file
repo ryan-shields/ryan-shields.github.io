@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan Shields - Mechanical Engineer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            @apply bg-gray-50 text-gray-800; /* Light background, dark text */
+        }
+        .container-wrapper {
+            @apply max-w-4xl mx-auto p-4 sm:p-6 lg:p-8 rounded-lg shadow-xl bg-white my-8; /* Centered, padded container */
+        }
+        /* Custom scrollbar for better aesthetics, especially in project descriptions */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1; /* Tailwind gray-300 */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8; /* Tailwind gray-400 */
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <div class="container-wrapper">
+        <!-- Navigation Buttons -->
+        <nav class="flex justify-center space-x-4 mb-8">
+            <button id="cv-btn" class="px-6 py-3 rounded-full bg-blue-600 text-white font-semibold shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-75 transition-all duration-300">
+                CV
+            </button>
+            <button id="portfolio-btn" class="px-6 py-3 rounded-full bg-gray-200 text-gray-800 font-semibold shadow-md hover:bg-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-opacity-75 transition-all duration-300">
+                Portfolio
+            </button>
+        </nav>
+
+        <!-- CV Section -->
+        <section id="cv-section" class="active-section">
+            <header class="text-center mb-10">
+                <h1 class="text-4xl sm:text-5xl font-extrabold text-gray-900 mb-2">Your Full Name</h1>
+                <p class="text-xl sm:text-2xl text-blue-600 font-medium">Mechanical Engineer</p>
+                <div class="text-gray-600 mt-4 text-sm sm:text-base">
+                    <p>
+                        <a href="mailto:youremail@example.com" class="hover:underline">youremail@example.com</a> |
+                        <a href="tel:+1234567890" class="hover:underline">+1 (234) 567-890</a> |
+                        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" class="hover:underline">LinkedIn</a> |
+                        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="hover:underline">GitHub</a>
+                    </p>
+                </div>
+            </header>
+
+            <section class="mb-8 p-6 bg-gray-50 rounded-lg shadow-inner">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4 border-b-2 border-blue-400 pb-2">Summary</h2>
+                <p class="text-gray-700 leading-relaxed">
+                    Highly motivated and detail-oriented Mechanical Engineer with X years of experience in product design,
+                    analysis, and manufacturing. Proficient in CAD software, FEA, and rapid prototyping.
+                    Seeking to leverage strong problem-solving skills and technical expertise to contribute to innovative projects.
+                </p>
+            </section>
+
+            <section class="mb-8 p-6 bg-gray-50 rounded-lg shadow-inner">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4 border-b-2 border-blue-400 pb-2">Experience</h2>
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800">Mechanical Design Engineer</h3>
+                    <p class="text-blue-600 font-medium">Tech Solutions Inc. | City, State</p>
+                    <p class="text-sm text-gray-500">Jan 20XX – Present</p>
+                    <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
+                        <li>Led the design and development of XYZ mechanical components, resulting in a 15% reduction in material costs.</li>
+                        <li>Conducted FEA simulations to optimize part performance and validate designs, reducing prototyping iterations by 20%.</li>
+                        <li>Collaborated with cross-functional teams including manufacturing and electrical engineering.</li>
+                        <li>Managed multiple projects simultaneously from concept to production, ensuring on-time delivery.</li>
+                    </ul>
+                </div>
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800">Junior Mechanical Engineer</h3>
+                    <p class="text-blue-600 font-medium">Innovate Corp. | City, State</p>
+                    <p class="text-sm text-gray-500">Sept 20XX – Dec 20XX</p>
+                    <ul class="list-disc list-inside text-gray-700 mt-2 space-y-1">
+                        <li>Assisted senior engineers in drafting and 3D modeling using SolidWorks.</li>
+                        <li>Performed root cause analysis on product failures and suggested design improvements.</li>
+                        <li>Participated in prototype assembly and testing, documenting results for design iterations.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="mb-8 p-6 bg-gray-50 rounded-lg shadow-inner">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4 border-b-2 border-blue-400 pb-2">Education</h2>
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800">Master of Science in Mechanical Engineering</h3>
+                    <p class="text-blue-600 font-medium">University Name | City, State</p>
+                    <p class="text-sm text-gray-500">Graduated: May 20XX</p>
+                    <p class="text-gray-700">GPA: 3.X/4.0</p>
+                </div>
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-gray-800">Bachelor of Science in Mechanical Engineering</h3>
+                    <p class="text-blue-600 font-medium">Another University | City, State</p>
+                    <p class="text-sm text-gray-500">Graduated: May 20XX</p>
+                    <p class="text-gray-700">GPA: 3.X/4.0</p>
+                </div>
+            </section>
+
+            <section class="p-6 bg-gray-50 rounded-lg shadow-inner">
+                <h2 class="text-2xl font-bold text-gray-800 mb-4 border-b-2 border-blue-400 pb-2">Skills</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 text-gray-700">
+                    <div>
+                        <h4 class="font-semibold text-gray-800">CAD Software:</h4>
+                        <p>SolidWorks, AutoCAD, Inventor, Fusion 360</p>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-gray-800">Simulation/Analysis:</h4>
+                        <p>ANSYS, ABAQUS, MATLAB, Simulink, FEA</p>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-gray-800">Manufacturing:</h4>
+                        <p>CNC Machining, 3D Printing, Welding, Assembly</p>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-gray-800">Programming:</h4>
+                        <p>Python (Basic), C++ (Basic)</p>
+                    </div>
+                    <div>
+                        <h4 class="font-semibold text-gray-800">Other:</h4>
+                        <p>GD&T, Technical Drawing, Prototyping, Project Management</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- Project Portfolio Section -->
+        <section id="portfolio-section" class="hidden">
+            <h2 class="text-3xl font-bold text-gray-900 text-center mb-8 border-b-2 border-blue-400 pb-4">My Projects</h2>
+
+            <!-- Project Card 1 -->
+            <div class="mb-8 p-6 bg-white rounded-lg shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Robotic Arm Design & Prototyping</h3>
+                <p class="text-gray-600 text-sm mb-4">
+                    <span class="font-medium">Technologies:</span> SolidWorks, Arduino, 3D Printing
+                </p>
+                <img src="https://placehold.co/600x400/add8e6/000000?text=Robotic+Arm+Project" alt="Robotic Arm Project Image" class="w-full h-48 object-cover rounded-md mb-4 shadow-sm">
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    Designed and built a 3-DOF robotic arm for pick-and-place operations. Optimized joint mechanisms for precision and
+                    load-bearing capacity. Utilized 3D printing for rapid prototyping and iterated on designs based on functional testing.
+                    Developed Arduino-based control system for inverse kinematics.
+                </p>
+                <div class="flex flex-wrap gap-3">
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-4 py-2 bg-blue-500 text-white text-sm font-medium rounded-full hover:bg-blue-600 transition-colors duration-200">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                        View Project (CAD/Report)
+                    </a>
+                    <a href="https://github.com/yourusername/robotic-arm-project" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-4 py-2 bg-gray-700 text-white text-sm font-medium rounded-full hover:bg-gray-800 transition-colors duration-200">
+                        <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.414 2.865 8.167 6.848 9.5.5.092.682-.217.682-.483 0-.237-.008-.865-.013-1.698-2.782.604-3.37-1.34-3.37-1.34-.454-1.15-.11-1.458-.11-1.458.373-.26.027-.255.027-.255.41.028.623.418.623.418.368.623.967.443 1.2.338.037-.26.143-.443.265-.544-1.123-.127-2.305-.562-2.305-2.508 0-.554.198-1.008.533-1.363-.053-.127-.23-.64.05-1.34s1.284-.42 2.652.529c.2-.057.41-.085.62-.086.21 0 .42.029.62.086 1.37-1.029 2.652-.529 2.652-.529.28.7.103 1.213.05 1.34.335.355.533.809.533 1.363 0 1.95-1.182 2.379-2.305 2.504.145.127.275.37.275.748 0 1.077-.01 1.94-.01 2.204 0 .269.18.575.688.482C17.135 18.17 20 14.418 20 10.017c0-5.533-4.477-10.017-10-10.017z"></path></svg>
+                        GitHub Repo
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="mb-8 p-6 bg-white rounded-lg shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">FEA Stress Analysis of Custom Bracket</h3>
+                <p class="text-gray-600 text-sm mb-4">
+                    <span class="font-medium">Technologies:</span> ANSYS Workbench, SolidWorks, Material Science
+                </p>
+                <img src="https://placehold.co/600x400/b0c4de/000000?text=FEA+Analysis+Project" alt="FEA Analysis Project Image" class="w-full h-48 object-cover rounded-md mb-4 shadow-sm">
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    Performed comprehensive Finite Element Analysis on a custom-designed structural bracket to assess
+                    stress distribution and deformation under various loading conditions. Identified critical stress
+                    points and recommended design modifications to enhance structural integrity and extend lifespan.
+                    Generated detailed reports with visualizations of stress contours and displacement maps.
+                </p>
+                <div class="flex flex-wrap gap-3">
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-4 py-2 bg-blue-500 text-white text-sm font-medium rounded-full hover:bg-blue-600 transition-colors duration-200">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                        View Report (PDF)
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div class="mb-8 p-6 bg-white rounded-lg shadow-lg border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+                <h3 class="text-2xl font-semibold text-blue-700 mb-3">Thermodynamic Analysis of HVAC System</h3>
+                <p class="text-gray-600 text-sm mb-4">
+                    <span class="font-medium">Technologies:</span> MATLAB, Engineering Equation Solver (EES), HVAC Principles
+                </p>
+                <img src="https://placehold.co/600x400/d8bfd8/000000?text=HVAC+Analysis+Project" alt="HVAC Analysis Project Image" class="w-full h-48 object-cover rounded-md mb-4 shadow-sm">
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    Conducted a detailed thermodynamic analysis of an existing HVAC system to identify inefficiencies
+                    and propose energy-saving modifications. Developed MATLAB scripts to model system performance under
+                    varying conditions and quantify potential energy reductions. Presented findings and recommendations
+                    to stakeholders, leading to a 5% projected energy cost saving.
+                </p>
+                <div class="flex flex-wrap gap-3">
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-4 py-2 bg-blue-500 text-white text-sm font-medium rounded-full hover:bg-blue-600 transition-colors duration-200">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+                        View Case Study
+                    </a>
+                </div>
+            </div>
+
+            <!-- Add more project cards as needed -->
+
+        </section>
+
+    </div>
+
+    <script>
+        const cvBtn = document.getElementById('cv-btn');
+        const portfolioBtn = document.getElementById('portfolio-btn');
+        const cvSection = document.getElementById('cv-section');
+        const portfolioSection = document.getElementById('portfolio-section');
+
+        // Function to update button styles
+        function updateButtonStyles(activeBtn, inactiveBtn) {
+            activeBtn.classList.remove('bg-gray-200', 'text-gray-800', 'hover:bg-gray-300', 'focus:ring-gray-400');
+            activeBtn.classList.add('bg-blue-600', 'text-white', 'hover:bg-blue-700', 'focus:ring-blue-500');
+
+            inactiveBtn.classList.remove('bg-blue-600', 'text-white', 'hover:bg-blue-700', 'focus:ring-blue-500');
+            inactiveBtn.classList.add('bg-gray-200', 'text-gray-800', 'hover:bg-gray-300', 'focus:ring-gray-400');
+        }
+
+        // Show CV section by default
+        cvSection.classList.remove('hidden');
+        portfolioSection.classList.add('hidden');
+        updateButtonStyles(cvBtn, portfolioBtn);
+
+
+        cvBtn.addEventListener('click', () => {
+            cvSection.classList.remove('hidden');
+            portfolioSection.classList.add('hidden');
+            updateButtonStyles(cvBtn, portfolioBtn);
+        });
+
+        portfolioBtn.addEventListener('click', () => {
+            portfolioSection.classList.remove('hidden');
+            cvSection.classList.add('hidden');
+            updateButtonStyles(portfolioBtn, cvBtn);
+        });
+    </script>
+
+</body>
+</html>

@@ -1,3 +1,23 @@
-theme: jekyll-theme-minimal
-title: Octocat's homepage
-description: Bookmark this to keep an eye on my project updates!
+# Site settings
+title: Your Name - Mechanical Engineer Portfolio
+description: A minimalist CV and Project Portfolio for a Mechanical Engineer.
+email: youremail@example.com
+baseurl: "/my-portfolio" # The subpath of your site, e.g., /blog/
+url: "https://yourusername.github.io" # The base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+theme: minima # You can choose other Jekyll themes, or set to null if using entirely custom CSS/layout
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag # Good for SEO on GitHub Pages
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
